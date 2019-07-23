@@ -15,6 +15,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
+  // win.loadFile('src/index.html')
   win.loadFile('dist/angular-electron/index.html')
 
   // 개발자 도구를 엽니다.

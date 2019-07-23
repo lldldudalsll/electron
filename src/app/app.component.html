@@ -1,21 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <app-auth></app-auth> -->
 
+<div class="mat-app-background"> 
+  <h3>My Budget: &#8361;{{budget}}</h3> 
+  <mat-form-field> 
+    <input matInput placeholder="budget" type="text" [(ngModel)]="budget"/> 
+  </mat-form-field> 
+  <button mat-raised-button color="primary">Add Income</button> 
 </div>
 
-<div class="auth">
-  <h2>Sign In</h2>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="id" value="">
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="pw">
-    </mat-form-field>
-  </form>
-  <button mat-raised-button color="primary">Sign In</button>
-  <button mat-raised-button color="primary">Sign Up</button>
-</div>
 
 <router-outlet></router-outlet>
